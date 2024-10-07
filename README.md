@@ -21,12 +21,12 @@
 
 This is a documentation of my Ladies in Tech Africa journey in Data Analysis. It covers all hard skills learnt during the Bootcamp.
 This began with an Introduction to Data Analysis. Major Data analysis skills taught were 
--Excel 
--SQL and 
--Power BI.
+- Excel 
+- SQL and 
+- Power BI.
 Bonuses include 
--Optimizing LinkedIn account and 
--Building a Portfolio using GitHub
+- Optimizing LinkedIn account and 
+- Building a Portfolio using GitHub
 
 **DATA SOURCES**
 
