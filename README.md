@@ -3,19 +3,19 @@
 
 ##TABLE OF CONTENT
 
--[OVERVIEW].(#overview)
+[OVERVIEW](#overview)
 
-[DATA SOURCES].(#data-sources)
+[DATA SOURCES](#data-sources)
 
-[Tools Used].(#tools-used)
+[Tools Used](#tools-used)
 
-[EXCEL].(#excel)
+[EXCEL](#excel)
 
-[SQL].(#sql)
+[SQL](#sql)
 
-[LINKEDIN].(#linkedin)
+[LINKEDIN](#linkedin)
 
-[GITHUB].(#github)
+[GITHUB](#github)
 
 #OVERVIEW
 This is a documentation of my Ladies in Tech Africa journey in Data Analysis. It covers all hard skills learnt during the Bootcamp.
