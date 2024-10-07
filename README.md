@@ -205,10 +205,12 @@ Excel treats the cells we are referencing in four ways
 
 IF Function is used to check conditions and return different values. It is your go to tool used to generate categories by testing certain conditions. If the condition is true, the formula will push the condition
 
+![IFS](https://github.com/user-attachments/assets/d05b2764-35aa-46bc-b745-93098b2f6ce5)
+
+![IF CONDITION](https://github.com/user-attachments/assets/6bedafbb-6264-4249-a174-13a174eb7d68)
 
 
+**EXCEL REPORTING**
 
-- 
+Pivot table is a data summarization tool. Click any where within your Data Set, go to insert tab, click on pivot table. Then click new worksheet and Okay
 
-My first Excel Practice Portfolio
-![3 TABLES JOIN](https://github.com/user-attachments/assets/64d9f165-b731-41ca-ba0c-ddb2f305e633)
