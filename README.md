@@ -140,6 +140,13 @@ Within the RIBBON are TABS and within the TABS are GROUPS and within each GROUPS
 - CTRL A for argument box while function is active
 - CTRL 0 to hide highlighted columns
 - CTRL E to flash fill
+- F4 / Fn F4 for cell referencing
+- CTRL PAGE UP worksheet before
+- CTRL PAGE DOWN worksheet after
+- CTRL D copy down
+- CTRL R copy right
+- ALT ESV paste as value
+- CTRL SHIFT L to filter
 
 **EXCEL FUNCTIONS**
 
@@ -176,7 +183,27 @@ Functions that can be used for cleaning includes
 
 **DATA LOOKUP**
 
-Data lookup is using
+Data lookup is using data set that are handy to get data from other tables that have relationship with the current table. We can find LOOKUP in the formula tab. The functions mostly used include:
+- VLOOKUP
+- HLOOKUP
+- XLOOKUP
+- INDEX
+- MATCH
+- INDEX & MATCH
+- CHOOSE
+- INDIRECT
+
+**CELL REFERENCING**
+
+Excel treats the cells we are referencing in four ways
+- ABSOLUTE REFERENCING ($U$7)
+- RELATIVE REFERENCING (U7)
+- COLUMN CONSTANT (&U7)
+- ROW CONSTANT (U$7)
+
+**IF FUNCTION**
+
+IF Function is used to check conditions and return different values. It is your go to tool used to generate categories by testing certain conditions. If the condition is true, the formula will push the condition
 
 
 
