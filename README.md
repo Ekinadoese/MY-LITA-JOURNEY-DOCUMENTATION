@@ -4,11 +4,17 @@
 ##TABLE OF CONTENT
 
 -[OVERVIEW].(#overview)
+
 [DATA SOURCES].(#data-sources)
+
 [Tools Used].(#tools-used)
+
 [EXCEL].(#excel)
+
 [SQL].(#sql)
+
 [LINKEDIN].(#linkedin)
+
 [GITHUB].(#github)
 
 #OVERVIEW
