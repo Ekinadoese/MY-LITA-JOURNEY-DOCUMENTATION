@@ -135,10 +135,51 @@ Within the RIBBON are TABS and within the TABS are GROUPS and within each GROUPS
 - CTRL - to delete
 - CTRL SHIFT + to insert row or column
 - ALT TAB swithches between windows
+- SHIFT F3 to insert function
+- CTRL SHIFT DOWN to highlight entire column
+- CTRL A for argument box while function is active
+- CTRL 0 to hide highlighted columns
+- CTRL E to flash fill
+
+**EXCEL FUNCTIONS**
+
+Functions are pre-configured analytical codes used in excel while Formulas are codes created by us to carry out calculations in Excel. Every function begins with an = sign
+![basic excel functions](https://github.com/user-attachments/assets/ffd6d2e2-1ca2-4a7e-a1c5-3950c7e36700)
+
+Everything within the bracket in a function is called an argument. Those in squared brackets are optional fields while others are mandatory
+
+
   
 **DATA ENTRY IN EXCEL**
 
-Everything typed in Excel is treated either as text or number. While texts are aligned to the Left, numbers are aligned to the right. Excel also treats date as numbers using system format. Data can be easily entered using Form. Stay anywhere within the typed data and click on form to display FORM. Cell entry can be validated by defining the kind on information to be filled into it. Select cells to validate, Go to data and click on Validation. To validate text, you must create a list by defining name in the formular bar.
+Everything typed in Excel is treated either as text or number. While texts are aligned to the Left, numbers are aligned to the right. Excel also treats date as numbers using system format. Data can be easily entered using Form. Stay anywhere within the typed data and click on form to display FORM. Cell entry can be validated by defining the kind on information to be filled into it. Select cells to validate, Go to data and click on Validation. To validate text, you must create a list by defining name in the formular bar. We can activate the argument box to ease usage of functions as beginners. When the function is active, press CTRL A to activate argument box
+
+![basic functions](https://github.com/user-attachments/assets/4b378eae-b2d9-4796-9bf1-d362842595ef)
+
+**DATA CLEANING**
+
+Functions that can be used for cleaning includes
+- LOWER
+- UPPER
+- PROPER
+- TRIM
+- LEFT
+- RIGHT
+- MID
+- FIND
+- LEN
+- CONCAT
+
+![NAMES FROM EMAIL](https://github.com/user-attachments/assets/de30f7af-2637-46ed-b65b-e6cb169cf2a4)
+
+![concat](https://github.com/user-attachments/assets/c94f1d2b-6f06-42a9-b782-b115fd94d6f3)
+
+**DATA LOOKUP**
+
+Data lookup is using
+
+
+
 
 - 
 
