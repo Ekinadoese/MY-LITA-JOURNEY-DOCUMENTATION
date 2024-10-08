@@ -349,6 +349,7 @@ when personid = 5 then 'agbado'
 else 'unknown'
 end
 
+![OUTCOME CASE WHEN](https://github.com/user-attachments/assets/611488d3-263b-43a9-81dd-320c186b1410)
 
 ----- PAYMENT TABLE------
 CREATE TABLE PAYMENT (
@@ -420,6 +421,8 @@ values ('emeka', 12),
 ('baby', 17),
 ('osaro', 19)
 
+![person](https://github.com/user-attachments/assets/24a4de0c-6191-4272-be1c-d89bd3a12ef6)
+
 -------- insert more records into person table ---------
 
 insert into [dbo].[person]
@@ -453,6 +456,7 @@ update person
 set person_name = 'Esther_Meg'
 where personid = 11 
 
+![create table and update](https://github.com/user-attachments/assets/a39ff4fd-a8a1-4d34-bf1b-89bc11367f0b)
 
 ----- to add column to table, we use alter --------
 alter table person 
@@ -474,6 +478,9 @@ when personid = 5 then 'agbado'
 else 'unknown'
 end
 
+![CASE WHEN 2](https://github.com/user-attachments/assets/1f20ce7d-8020-47a7-8add-58f7df753fd2)
+
+![CASE AND ALTER](https://github.com/user-attachments/assets/7440a04c-1cc7-4a0a-976c-66527e31bfd6)
 
 ----- PAYMENT TABLE------
 CREATE TABLE PAYMENT (
@@ -568,6 +575,7 @@ SELECT COUNT(STAFFID) AS STAFFPERSTATE, STATE_OF_ORIGIN
 FROM employee
 GROUP BY STATE_OF_ORIGIN
 
+![GROUP BY, ORDER BY](https://github.com/user-attachments/assets/526d9fe8-3632-48d0-be9b-3fd90922f7ed)
 
 ------HAVING ---------
 SELECT COUNT(STAFFID)AS STAFFPERDEPT, DEPT
@@ -575,6 +583,7 @@ FROM employee
 GROUP BY DEPT
 HAVING COUNT(STAFFID) >=2
 
+![HAVING](https://github.com/user-attachments/assets/26a2c322-d0a2-4755-ab15-1ea80add1369)
 
 -------- SORT BY COLUMN INDEX -----
 SELECT COUNT(STAFFID) AS STAFFPERSTATE, STATE_OF_ORIGIN
@@ -596,16 +605,21 @@ WHERE AGE <> 20
 SELECT * FROM employee
 WHERE AGE > 25
 
+![COMPARISON OPERATORS](https://github.com/user-attachments/assets/e949c6f3-5f7f-4f69-81a3-413939c9edd6)
 
 ----BETWEEN AND NOT BETWEEN ----
 SELECT * FROM employee
 WHERE AGE BETWEEN 25 AND 28
+
+![BETWEEN](https://github.com/user-attachments/assets/a3fb8a96-0ada-4894-aea9-8e1aabacb0d8)
+![NOT BETWEEN](https://github.com/user-attachments/assets/6b33d107-0882-4c16-a670-4ea17ae59064)
 
 SELECT * FROM employee
 WHERE AGE NOT BETWEEN 25 AND 30
 
 ALTER TABLE employee
 ADD salary BIGINT
+
 
 UPDATE employee
 SET SALARY = CASE
@@ -628,10 +642,18 @@ END
 SELECT * FROM employee 
 WHERE DEPT NOT IN ('SALES', 'LOGISTICS')
 
+![IN AND NOT IN](https://github.com/user-attachments/assets/6c68c7a4-ec49-42dc-b907-0a4a82512b5d)
+![IN](https://github.com/user-attachments/assets/34768059-d69d-4b78-8268-5b255cb5e0e7)
+![NOT IN](https://github.com/user-attachments/assets/54c53ec8-23bd-4561-86e9-4b3a7da7eff1)
+
 -----AND AND OR----
 SELECT * FROM employee
 WHERE state_of_origin = 'LAGOS' AND DEPT = 'FINANCE' AND gender = 'FEMALE'
 SELECT * FROM salary
+
+![AND](https://github.com/user-attachments/assets/214bd5e9-25aa-44d6-8009-a5150a6f16c9)
+![AND AND](https://github.com/user-attachments/assets/e4921a85-7eb0-45dd-9139-a39597b31fc0)
+![OR](https://github.com/user-attachments/assets/7b05c397-a50f-4e4c-8216-d1b6b64efb6e)
 
 ----- UPDATE ------
 UPDATE employee
@@ -654,10 +676,15 @@ SELECT*FROM employee
 SELECT*FROM person
 SELECT*FROM salary
 
+![SELECT SEVERAL TABLES](https://github.com/user-attachments/assets/1c4f3213-8089-4b72-a97f-4f07a501342c)
+![SELECT MULTIPLE TABLES](https://github.com/user-attachments/assets/682bb6b1-723b-4ece-955b-106453c71754)
+
 SELECT employee.staffid,employee.firstname, employee.gender,employee.DEPT,salary.salary
 FROM employee
 JOIN salary
 ON salary.dept = employee.DEPT
+
+![JOIN](https://github.com/user-attachments/assets/3bef1e8d-a528-4f6e-87c4-6222de2db6f6)
 
 create table stu_rec_3(
 adm_num int primary key identity (001,1),
@@ -694,6 +721,9 @@ JOIN stu_rec_2
 ON stu_rec_1.adm_num = stu_rec_2.adm_num
 JOIN stu_rec_3
 ON stu_rec_3.adm_num = stu_rec_1.adm_num
+
+![3 TABLES JOIN](https://github.com/user-attachments/assets/7f36bddb-3c7b-490f-9342-f8f56db1ab5a)
+
 
 --------UNION----------
 SELECT * FROM TABLE1
@@ -776,6 +806,11 @@ SELECT STAFFID, FIRSTNAME, GENDER, DEPT FROM employee
 
 SELECT * FROM vw_EMPLOYEE
 
+-----TO IMPORT DATA------
+
+Right click on database, select task, import flat file for CSV and Import data for Excel. Then follow prompt
+
+![IMPORT INTO SQL](https://github.com/user-attachments/assets/b8851377-ca3f-444b-86f5-ea3a8c0056cf)
 
 
 
