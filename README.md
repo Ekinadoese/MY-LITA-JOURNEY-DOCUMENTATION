@@ -147,6 +147,7 @@ Within the RIBBON are TABS and within the TABS are GROUPS and within each GROUPS
 - CTRL R copy right
 - ALT ESV paste as value
 - CTRL SHIFT L to filter
+- ALT F1 to bring up charts
 
 **EXCEL FUNCTIONS**
 
@@ -181,6 +182,9 @@ Functions that can be used for cleaning includes
 
 ![concat](https://github.com/user-attachments/assets/c94f1d2b-6f06-42a9-b782-b115fd94d6f3)
 
+![UPDATE SALARY WITH %](https://github.com/user-attachments/assets/5aec6115-599e-45fd-9671-9a8d72583b78)
+
+
 **DATA LOOKUP**
 
 Data lookup is using data set that are handy to get data from other tables that have relationship with the current table. We can find LOOKUP in the formula tab. The functions mostly used include:
@@ -212,5 +216,12 @@ IF Function is used to check conditions and return different values. It is your 
 
 **EXCEL REPORTING**
 
-Pivot table is a data summarization tool. Click any where within your Data Set, go to insert tab, click on pivot table. Then click new worksheet and Okay
+Pivot table is a data summarization tool. Click any where within your Data Set, go to insert tab, click on pivot table. Then click new worksheet and Ok
+
+![PIVOT PRACTICE](https://github.com/user-attachments/assets/d313d7e4-a28e-4a51-bedd-0f307aeca863)
+
+![image](https://github.com/user-attachments/assets/c5e96f4a-34c8-4758-b737-fd412f5269e8)
+
+
+
 
