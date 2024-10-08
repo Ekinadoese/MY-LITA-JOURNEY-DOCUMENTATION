@@ -148,11 +148,15 @@ Within the RIBBON are TABS and within the TABS are GROUPS and within each GROUPS
 - ALT ESV paste as value
 - CTRL SHIFT L to filter
 - ALT F1 to bring up charts
+- CTRL SHIFT 1 to insert thousand separators and decimal
+- 
 
 **EXCEL FUNCTIONS**
 
 Functions are pre-configured analytical codes used in excel while Formulas are codes created by us to carry out calculations in Excel. Every function begins with an = sign
 ![basic excel functions](https://github.com/user-attachments/assets/ffd6d2e2-1ca2-4a7e-a1c5-3950c7e36700)
+
+![basic functions](https://github.com/user-attachments/assets/e606e6b6-a796-4e09-b412-5ebe73092dc0)
 
 Everything within the bracket in a function is called an argument. Those in squared brackets are optional fields while others are mandatory
 
@@ -216,11 +220,563 @@ IF Function is used to check conditions and return different values. It is your 
 
 **EXCEL REPORTING**
 
-Pivot table is a data summarization tool. Click any where within your Data Set, go to insert tab, click on pivot table. Then click new worksheet and Ok
+Pivot table is a data summarization tool. 
+
+KEY TAKEAWAYS
+- Click any where within your Data Set, go to insert tab, click on pivot table. Then click new worksheet and Ok.
+- To create second pivot table, stay on the pivot table, CTRL A to highlight it, CTRL C to copy it. Come to where you want it to be, click and CTRL V to paste. Go to pivot table fields and uncheck data set you do not want. Then, check the dataset you want to analyse
+- You can apply filters by clicking on the ROW LABEL drop down
+- You can change the statistics to be presented with SUMMARIZE VALUE BY e.g AVERAGE, PERCENTAGE, etc by right clicking on any figure
+- You can sort by right clicking any figure and selecting SHOW VALUE AS e.g TOP 10, LAST 5, etc
+- To return pivot table to screen, go to PIVOT TABLE ANALYSE, FIELD LIST
+- You can duplicate a column by dragging into the bucket
+- To switch column position, rearrange in the bucket by dragging to desired position
+- To customize figures like 7,000,000,000 to 7Billion, highlight CTRL 1, click custom, add commas to your format. Each comma summarize in 1000. So, we have #,##0,,,"Billion". This does not change the underlying value in the formula
+- Column titles can be changed by clicking within the cells and typing in what you want
+- To change the design, stay within the pivot table, click on design, pivot table styles
+- To convert Date from Year to Month, click on the year and right click, select ungroup, click on any date and right click, select group and choose month
+- To add SLICER to chart, select Chart, go to ANALYZE, select insert SLICER. Go to slicer tab, click report collection, check which pivot tables to be affected by slicer
 
 ![PIVOT PRACTICE](https://github.com/user-attachments/assets/d313d7e4-a28e-4a51-bedd-0f307aeca863)
 
 ![image](https://github.com/user-attachments/assets/c5e96f4a-34c8-4758-b737-fd412f5269e8)
+
+## **SQL**
+
+SQL means STRUCTURED QUERY LANGUAGE it is a DATABASE management app.
+
+After a successful download and installation of SQL and SSMS (SEQUEL SERVER MANAGEMENT STUDIO), you launch the app and open a new query.
+
+**SQL QUERIES** 
+''' create database class2;
+
+create table employee (
+staffid varchar (15) not null,
+firstname varchar (255) not null,
+secondname varchar (255) not null,
+gender varchar (10),
+date_of_Birth date,
+hiredate datetime,
+PRIMARY KEY (STAFFID)
+)
+
+select * from employee
+
+insert into Employee (staffid, firstname, secondname, gender,Date_of_Birth, hiredate)
+values ( 'AB401', 'ayan', 'olakun', 'female', '1992-08-22', '2018-02-09'),
+( 'AB212', 'okorie', 'mercy', 'female','1988-10-09', '2018-10-09'),
+( 'AB223', 'joshua', 'chukwuemeka', 'male','1980-10-09', '2022-02-09'),
+( 'AB234', 'sanni', 'ibrahim', 'male','1958-10-09', '2019-09-23'),
+( 'AB254', 'mercy', 'olanipekun', 'female','1982-10-09', '2020-02-09'),
+( 'AB249', 'johnson', 'mercy', 'female','1982-10-09', '2019-12-09'),
+( 'AB298', 'ayomide', 'halleluyah', 'female', '1982-10-09','2018-07-11'),
+( 'AB260', 'deborah', 'justin', 'female','1982-10-09', '2018-02-09'),
+( 'AB281', 'wale', 'olanipekun', 'male','1982-10-09', '2018-02-09')
+
+insert into employee
+values ('AB341', 'morayo', 'imeh', 'male', '1994-12-1', '2015-09-12')
+
+
+
+create table person (
+personid int identity (1,1) primary key not null,
+person_name varchar (255) not null,
+age int
+)
+
+select * from person
+
+insert into person(person_name,age)
+values ('emeka', 12),
+('john', 18),
+('abraham', 17),
+('eki', 13),
+('sarah', 11),
+('baby', 17),
+('osaro', 19)
+
+-------- insert more records into person table ---------
+
+insert into [dbo].[person]
+values ('joy', 12),
+('mary', 16),
+('johnbull', 17),
+('esther', 19),
+('ola', 11),
+('akin',12),
+('chris', 17)
+
+select * from person
+
+
+----- to create salary table ------
+
+create table salary (
+staff_id int identity (1,1) not null,
+first_name varchar (50) not null,
+dept varchar (50) not null,
+salary decimal (10, 1)
+)
+
+select * from[dbo].[salary]
+)
+select * from[dbo].[students]
+select count(age) as totalstudents from [dbo].[students]
+
+------to update name -------
+update person
+set person_name = 'Esther_Meg'
+where personid = 11 
+
+
+----- to add column to table, we use alter --------
+alter table person 
+add surname varchar (50)
+
+select * from [dbo].[person]
+
+update person
+set surname ='ola'
+where person_name ='john'
+
+-------- to update multiple using case when --------
+update [dbo].[person]
+set surname = case 
+when personid = 1 then 'olaniyi'
+when personid = 3 then 'okunlola'
+when personid = 4 then 'amadin'
+when personid = 5 then 'agbado'
+else 'unknown'
+end
+
+
+----- PAYMENT TABLE------
+CREATE TABLE PAYMENT (
+PAY_ID INT IDENTITY (001,1) PRIMARY KEY NOT NULL,
+ACC_NUM BIGINT NOT NULL,
+STAFF_ID INT,
+BANK VARCHAR (255) DEFAULT 'STERLING',
+PAY_METHOD VARCHAR (20) CHECK (PAY_METHOD = 'CASH' OR PAY_METHOD = 'TRANSFER')
+)
+
+
+INSERT [dbo].[PAYMENT]
+VALUES (2223334545, 1, 'STERLING', 'CASH'),
+(2223336767, 2, 'STERLING', 'TRANSFER'),
+(7774535678, 3, 'STERLING', 'CASH')
+
+SELECT * FROM PAYMENT
+
+INSERT INTO PAYMENT
+VALUES (22334466, 7, 'ZENITH', 'CASH')
+
+SELECT COUNT (*) AS CASH_PAYMENT FROM PAYMENT
+WHERE PAY_METHOD = 'CASH'
+
+create database class2;
+
+create table employee (
+staffid varchar (15) not null,
+firstname varchar (255) not null,
+secondname varchar (255) not null,
+gender varchar (10),
+date_of_Birth date,
+hiredate datetime,
+PRIMARY KEY (STAFFID)
+)
+
+select * from employee
+
+insert into Employee (staffid, firstname, secondname, gender,Date_of_Birth, hiredate)
+values ( 'AB401', 'ayan', 'olakun', 'female', '1992-08-22', '2018-02-09'),
+( 'AB212', 'okorie', 'mercy', 'female','1988-10-09', '2018-10-09'),
+( 'AB223', 'joshua', 'chukwuemeka', 'male','1980-10-09', '2022-02-09'),
+( 'AB234', 'sanni', 'ibrahim', 'male','1958-10-09', '2019-09-23'),
+( 'AB254', 'mercy', 'olanipekun', 'female','1982-10-09', '2020-02-09'),
+( 'AB249', 'johnson', 'mercy', 'female','1982-10-09', '2019-12-09'),
+( 'AB298', 'ayomide', 'halleluyah', 'female', '1982-10-09','2018-07-11'),
+( 'AB260', 'deborah', 'justin', 'female','1982-10-09', '2018-02-09'),
+( 'AB281', 'wale', 'olanipekun', 'male','1982-10-09', '2018-02-09')
+
+insert into employee
+values ('AB341', 'morayo', 'imeh', 'male', '1994-12-1', '2015-09-12')
+
+
+
+create table person (
+personid int identity (1,1) primary key not null,
+person_name varchar (255) not null,
+age int
+)
+
+select * from person
+
+insert into person(person_name,age)
+values ('emeka', 12),
+('john', 18),
+('abraham', 17),
+('eki', 13),
+('sarah', 11),
+('baby', 17),
+('osaro', 19)
+
+-------- insert more records into person table ---------
+
+insert into [dbo].[person]
+values ('joy', 12),
+('mary', 16),
+('johnbull', 17),
+('esther', 19),
+('ola', 11),
+('akin',12),
+('chris', 17)
+
+select * from person
+
+
+----- to create salary table ------
+
+create table salary (
+staff_id int identity (1,1) not null,
+first_name varchar (50) not null,
+dept varchar (50) not null,
+salary decimal (10, 1)
+)
+
+select * from[dbo].[salary]
+)
+select * from[dbo].[students]
+select count(age) as totalstudents from [dbo].[students]
+
+------to update name -------
+update person
+set person_name = 'Esther_Meg'
+where personid = 11 
+
+
+----- to add column to table, we use alter --------
+alter table person 
+add surname varchar (50)
+
+select * from [dbo].[person]
+
+update person
+set surname ='ola'
+where person_name ='john'
+
+-------- to update multiple using case when --------
+update [dbo].[person]
+set surname = case 
+when personid = 1 then 'olaniyi'
+when personid = 3 then 'okunlola'
+when personid = 4 then 'amadin'
+when personid = 5 then 'agbado'
+else 'unknown'
+end
+
+
+----- PAYMENT TABLE------
+CREATE TABLE PAYMENT (
+PAY_ID INT IDENTITY (001,1) PRIMARY KEY NOT NULL,
+ACC_NUM BIGINT NOT NULL,
+STAFF_ID INT,
+BANK VARCHAR (255) DEFAULT 'STERLING',
+PAY_METHOD VARCHAR (20) CHECK (PAY_METHOD = 'CASH' OR PAY_METHOD = 'TRANSFER')
+)
+
+
+INSERT [dbo].[PAYMENT]
+VALUES (2223334545, 1, 'STERLING', 'CASH'),
+(2223336767, 2, 'STERLING', 'TRANSFER'),
+(7774535678, 3, 'STERLING', 'CASH')
+
+SELECT * FROM PAYMENT
+
+INSERT INTO PAYMENT
+VALUES (22334466, 7, 'ZENITH', 'CASH')
+
+SELECT COUNT (*) AS CASH_PAYMENT FROM PAYMENT
+WHERE PAY_METHOD = 'CASH'
+
+select * from employee
+
+alter table employee   
+add state_of_origin varchar (50)
+
+------TO ALTER -----
+
+update  employee 
+set state_of_origin = case 
+when staffid = 'AB212' THEN 'LAGOS'
+WHEN STAFFID = 'AB223' THEN 'ASABA'
+WHEN STAFFID = 'AB234' THEN 'ONITSHA'
+WHEN STAFFID = 'AB249' THEN 'OGAN'
+WHEN STAFFID = 'AB254' THEN 'OYO'
+WHEN STAFFID = 'AB260' THEN 'ONDO'
+WHEN STAFFID = 'AB281' THEN 'EKITI'
+WHEN STAFFID = 'AB298' THEN 'ABA'
+WHEN STAFFID = 'AB341' THEN 'ABA'
+WHEN STAFFID = 'AB401' THEN 'LAGOS'
+ELSE 'N/A'
+END
+
+alter table employee   
+add AGE INT
+
+update  employee 
+set DEPT = case 
+when staffid = 'AB212' THEN 'LOGISTICS'
+WHEN STAFFID = 'AB223' THEN 'FINANCE'
+WHEN STAFFID = 'AB234' THEN 'LOGISTICS'
+WHEN STAFFID = 'AB249' THEN 'LOGISTICS'
+WHEN STAFFID = 'AB254' THEN 'SALES'
+WHEN STAFFID = 'AB260' THEN 'FINANCE'
+WHEN STAFFID = 'AB281' THEN 'SALES'
+WHEN STAFFID = 'AB298' THEN 'LOGISTICS'
+WHEN STAFFID = 'AB341' THEN 'SALES'
+WHEN STAFFID = 'AB401' THEN 'FINANCE'
+ELSE 'N/A'
+END
+
+update  employee 
+set AGE = case 
+when staffid = 'AB212' THEN 30
+WHEN STAFFID = 'AB223' THEN 25
+WHEN STAFFID = 'AB234' THEN 26
+WHEN STAFFID = 'AB249' THEN 33
+WHEN STAFFID = 'AB254' THEN 21
+WHEN STAFFID = 'AB260' THEN 34
+WHEN STAFFID = 'AB281' THEN 28
+WHEN STAFFID = 'AB298' THEN 22
+WHEN STAFFID = 'AB341' THEN 20
+WHEN STAFFID = 'AB401' THEN 21
+ELSE 'N/A'
+END
+
+
+
+-------- ORDER BY ---------
+--- TO SORT RESULT IN ASCENDING OR DESCENDING ORDER ---------
+SELECT COUNT(STAFFID) AS STAFFPERSTATE, STATE_OF_ORIGIN
+FROM employee
+GROUP BY STATE_OF_ORIGIN
+ORDER BY COUNT (STAFFID) DESC
+
+
+------ GROUP BY -------
+SELECT COUNT(STAFFID) AS STAFFPERSTATE, STATE_OF_ORIGIN
+FROM employee
+GROUP BY STATE_OF_ORIGIN
+
+
+------HAVING ---------
+SELECT COUNT(STAFFID)AS STAFFPERDEPT, DEPT
+FROM employee
+GROUP BY DEPT
+HAVING COUNT(STAFFID) >=2
+
+
+-------- SORT BY COLUMN INDEX -----
+SELECT COUNT(STAFFID) AS STAFFPERSTATE, STATE_OF_ORIGIN
+FROM employee
+GROUP BY STATE_OF_ORIGIN
+ORDER BY 2 ASC
+
+--------COMPARISON AND RELATIONAL OPERATORS ------
+< LESS THAN
+> GREATER THAN
+<> NOT EQUAL
+
+SELECT * FROM employee
+WHERE AGE = 20
+
+SELECT * FROM employee
+WHERE AGE <> 20
+
+SELECT * FROM employee
+WHERE AGE > 25
+
+
+----BETWEEN AND NOT BETWEEN ----
+SELECT * FROM employee
+WHERE AGE BETWEEN 25 AND 28
+
+SELECT * FROM employee
+WHERE AGE NOT BETWEEN 25 AND 30
+
+ALTER TABLE employee
+ADD salary BIGINT
+
+UPDATE employee
+SET SALARY = CASE
+when staffid = 'AB212' THEN 300000
+WHEN STAFFID = 'AB223' THEN 250000
+WHEN STAFFID = 'AB234' THEN 250000
+WHEN STAFFID = 'AB249' THEN 300000
+WHEN STAFFID = 'AB254' THEN 150000
+WHEN STAFFID = 'AB260' THEN 350000
+WHEN STAFFID = 'AB281' THEN 250000
+WHEN STAFFID = 'AB298' THEN 300000
+WHEN STAFFID = 'AB341' THEN 150000
+WHEN STAFFID = 'AB401' THEN 250000
+ELSE 'N/A'
+END
+
+
+
+------- IN AND NOT IN --------
+SELECT * FROM employee 
+WHERE DEPT NOT IN ('SALES', 'LOGISTICS')
+
+-----AND AND OR----
+SELECT * FROM employee
+WHERE state_of_origin = 'LAGOS' AND DEPT = 'FINANCE' AND gender = 'FEMALE'
+SELECT * FROM salary
+
+----- UPDATE ------
+UPDATE employee
+SET DEPT = 'FINANCE'
+WHERE secondname = 'HALLELUYAH'
+
+---UPDATE SALARY WITH PERCENTAGE -----
+------ 5% = 0.05 ----------
+UPDATE employee
+SET salary = SALARY + (salary*0.05)
+WHERE salary < 300000 
+
+INSERT INTO salary
+VALUES ( 'JOHN', 'LOGISTICS', 25000),
+( 'MARY', 'SALES', 12000),
+( 'KENU', 'FINANCE', 15000)
+
+-----JOIN------
+SELECT*FROM employee
+SELECT*FROM person
+SELECT*FROM salary
+
+SELECT employee.staffid,employee.firstname, employee.gender,employee.DEPT,salary.salary
+FROM employee
+JOIN salary
+ON salary.dept = employee.DEPT
+
+create table stu_rec_3(
+adm_num int primary key identity (001,1),
+first_name varchar (25) not null,
+second_name varchar (25) not null,
+num bigint, 
+birthmonth varchar (25) not null
+)
+
+
+insert into stu_rec_3(first_name, second_name, num, birthmonth)
+values ('emeka', 'chukwu', 23456, 'june'),
+('emeka', 'john', 71089, 'may'),
+('chukwu', 'lucky', 12000, 'jan'),
+('lucky', 'mary', 33423, 'dec'),
+('joy', 'david', 65789, 'feb'),
+('emeka', 'martha', 98734, 'jul'),
+('chike', 'chukwu', 45354, 'jan'),
+('eze', 'chima', 134532, 'aug'),
+('eme', 'chinedu', 167593, 'jun'),
+('aka', 'chuwa', 155622, 'jul')
+
+select * from stu_rec_1
+select * from stu_rec_2
+select * from stu_rec_3
+
+
+-----JOIN------
+
+SELECT stu_rec_1.adm_num, stu_rec_1.first_name, stu_rec_1.second_name, stu_rec_1.age, stu_rec_1.class, stu_rec_2.fee, stu_rec_2.religion,
+stu_rec_3.num, stu_rec_3.birthmonth
+FROM stu_rec_1
+JOIN stu_rec_2
+ON stu_rec_1.adm_num = stu_rec_2.adm_num
+JOIN stu_rec_3
+ON stu_rec_3.adm_num = stu_rec_1.adm_num
+
+--------UNION----------
+SELECT * FROM TABLE1
+UNION ALL
+SELECT * FROM TABLE2
+
+SELECT * FROM employee
+
+SELECT STAFFID, FIRSTNAME, DEPT, 
+CASE
+WHEN AGE >= 30 THEN 'SENIOR'
+WHEN AGE BETWEEN 21 AND 30 THEN 'MID-AGE'
+WHEN AGE <= 20 THEN 'JUNIOR'
+ELSE 'UNKNOWN'
+END AS AGE_GRADE
+FROM employee
+
+
+--------------- INTERNATIONAL BREWERY ----------------
+
+CREATE DATABASE INTERNATIONAL_BREWERY;
+
+SELECT * FROM [dbo].[International Breweries]
+
+---- TOTAL PROFIT
+SELECT SUM(PROFIT) AS TOTALPROFIT FROM [dbo].[International Breweries]
+
+105587420
+
+--- TOTAL PROFIT FOR SENEGAL
+SELECT SUM(PROFIT) AS SENEGALPROFIT FROM [dbo].[International Breweries]
+WHERE COUNTRIES= 'SENEGAL'
+
+21485190
+
+
+--- TOTAL PROFIT FOR NIGERIA IN 2019
+SELECT SUM(PROFIT) AS NIGPROF19 FROM [dbo].[International Breweries]
+WHERE COUNTRIES= 'NIGERIA' AND YEARS = 2019
+
+4805320
+
+--- TOTAL PROFIT FOR EACH BRAND IN NIGERIA IN 2017
+
+SELECT BRANDS, SUM(PROFIT) AS BRANDNIGPROF17 
+FROM [dbo].[International Breweries]
+WHERE COUNTRIES= 'NIGERIA' AND YEARS = 2017
+GROUP BY BRANDS
+ORDER BY 2 DESC
+
+--- PROFIT FOR NIGERIA IN LAST 3 YEARS
+
+SELECT BRANDS, SUM(PROFIT) AS BRANDPROF 
+FROM [dbo].[International Breweries]
+WHERE COUNTRIES= 'NIGERIA'
+GROUP BY BRANDS
+ORDER BY 2 DESC
+
+---- TOTAL PROFIT FOR HERO BRAND
+SELECT SUM(PROFIT) AS BRANDPROF 
+FROM [dbo].[International Breweries]
+WHERE BRANDS= 'HERO'
+
+---- CATEGORIZE COUNTRIES
+SELECT 
+CASE
+WHEN COUNTRIES IN ('NIGERIA','GHANA') THEN 'ANGLOPHONE'
+ELSE 'FRANCOPHONE'
+END AS [LANGUAGE],
+SUM(PROFIT) AS TOTALPROF FROM [dbo].[International Breweries]
+WHERE YEARS IN ('2017', '2018', '2019')
+GROUP BY COUNTRIES
+ORDER BY 2 DESC
+
+-----------SQL VIEW ---------
+
+CREATE VIEW vw_EMPLOYEE
+AS
+SELECT STAFFID, FIRSTNAME, GENDER, DEPT FROM employee
+
+SELECT * FROM vw_EMPLOYEE
+
+
 
 
 
