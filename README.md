@@ -15,6 +15,8 @@
 
 [SQL](#sql)
 
+[POWER BI](#POWER-BI)
+
 [LINKEDIN](#linkedin)
 
 [GITHUB](#github)
@@ -813,6 +815,52 @@ Right click on database, select task, import flat file for CSV and Import data f
 ![IMPORT INTO SQL](https://github.com/user-attachments/assets/b8851377-ca3f-444b-86f5-ea3a8c0056cf)
 
 
+
+## POWER BI 
+
+Power BI (Business Intelligence) is a data visualisation and business intelligence tool that convert data from different data sources to interactive dashboards and BI reports. It is a collection of software services, apps and connectors that work together to turn unrelated sources of data into coherent, visually immersive, and interactive insight
+
+**POWER BI DESKTOP** is an interface where all visualization is done
+
+**POWER BI SERVICE** is software as a service SaaS. It is used to publish visualization
+
+**POWER BI Mobile App** is used to access visualization from connected devices on phone
+
+**POWER BI GATEWAY** is for connecting to an on-premise data source without need to move the data. It allows us to query large datasets and benefit from existing investments.
+
+### PRINCIPLES OF DATA VISUALIZATION
+
+- Determine your audience
+- Choose the right kind of chart
+- Focus on how your audience needs to use the data
+- Provide the necessary context for data to be interpreted and acted upon appropriately
+- Keep it simple
+- Choose colours carefully
+- Seek balance in your visual elements including texture, colour, shape, negative space, etc
+- Use patterns to identify similar types of information
+- Use proportion carefully so that differences in design, size, etc represents differences in value
+- Be skeptical. Ask yourself questions
+
+  In summary:
+- Strive for clarity and simplicity
+- Focus on creating a narrative
+- Strike a balance between design and function
+
+  **POWER BI INTERFACE**
+
+  ![THE POWER BI INTERFACE](https://github.com/user-attachments/assets/2358efbb-c32c-423d-a147-e42ac7b5dce9)
+
+  - Report view is where you see your visualization
+  - Data view is where you see your data the way it is
+  - Model view is where you see the relationship that exist between data
+  - Uploaded data are seen in Data dialog box at the left
+  - Click on get data to load data
+  - To see your visualization pane on both sides, click on File, click on Options and settings, Select Options, go to Preview features, Check (tick) On Object Interaction
+  - Transfor data checks the integrity of data by checking if all functionality are in order. It is the mechanic that repairs, amends, and manipulates the data
+  - Refresh data updates data from online data sources
+  - DAX Function (Data Analysis Xpression) is used with modelling
+  - Template can be changed from view
+  - Data can be recalled using Transform data
 
 
 
