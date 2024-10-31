@@ -850,6 +850,7 @@ Power BI (Business Intelligence) is a data visualisation and business intelligen
 
   ![THE POWER BI INTERFACE](https://github.com/user-attachments/assets/2358efbb-c32c-423d-a147-e42ac7b5dce9)
 
+KEY TAKE AWAYS FROM POWER BI TUTORIALS
   - Report view is where you see your visualization
   - Data view is where you see your data the way it is
   - Model view is where you see the relationship that exist between data
@@ -861,6 +862,16 @@ Power BI (Business Intelligence) is a data visualisation and business intelligen
   - DAX Function (Data Analysis Xpression) is used with modelling
   - Template can be changed from view
   - Data can be recalled using Transform data
+  - To manually insert data, click enter data and type in the data
+  - Close and apply commit changes made to data in transform data
+  - To load data from an external source, click Get Data
+  - To edit query, right click on the data and click Edit Query
+  - Remove columns removes selected columns
+  - Remove other columns retains selected columns
+  - Applied steps records the steps executed in data cleaning process
+  - clicking on the [x] sign beside each steps undo it and returns data to its previous state
+  - We can also keep rows or remove rows by clicking on either of them
+  - In checking data integrity, we check data 
 
 
 
