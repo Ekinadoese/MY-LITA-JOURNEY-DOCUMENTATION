@@ -1044,5 +1044,6 @@ MY FIRST BI DASHBOARD
 
 ![UPDATED VISUALIZATION](https://github.com/user-attachments/assets/12292730-1cb1-42dc-8329-5c929dfdd6b5)
 
+![Screenshot_20241102-171410](https://github.com/user-attachments/assets/413d61fe-09c4-4cbb-a8d8-f641ba283652)
 
 
