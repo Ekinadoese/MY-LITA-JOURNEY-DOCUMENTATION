@@ -821,6 +821,9 @@ Right click on database, select task, import flat file for CSV and Import data f
 
 ## POWER BI 
 
+![power bi](https://github.com/user-attachments/assets/7d571a4b-546e-488b-b91e-b274da0e1256)
+
+
 Power BI (Business Intelligence) is a data visualisation and business intelligence tool that convert data from different data sources to interactive dashboards and BI reports. It is a collection of software services, apps and connectors that work together to turn unrelated sources of data into coherent, visually immersive, and interactive insight
 
 **POWER BI DESKTOP** is an interface where all visualization is done
@@ -874,7 +877,9 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
 - To edit a query, right-click on the data and click "Edit Query"
 - Applied Steps records the steps executed in the data cleaning process
 - Clicking on the [x] sign beside each step undoes it and returns data to its previous state
-  
+
+  ![POWER BI ASS 4](https://github.com/user-attachments/assets/78fcf530-2463-4e09-bb22-e276618e49cf)
+
 4. Data Cleaning and Structuring
 - Remove columns removes selected columns
 - Remove other columns retains selected columns
@@ -886,12 +891,16 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
 - Split column functionality: e.g., Split email by delimiter (@) into name and suffix
 - To duplicate column, Right click on column and select option 
 
+![POWER BI ASS1](https://github.com/user-attachments/assets/e92a7e05-04a7-4855-bb0c-841bb41acb74)
+
 5. Data Types and Formatting
 - Data type is of different types and can be seen in the right edge of a column (e.g., ABC for text, 123 for numbers)
 - The right data type is important in column functionality
 - Click on data type to select from the options
 - You can edit or format a column by right-clicking on it
 - Columns can be moved by dragging
+
+![POWER BI ASS2](https://github.com/user-attachments/assets/1ec93f6e-f483-4b96-a687-46cf61ce14cb)
 
 6. Advanced Data Transformation
 - Transposing data means changing rows to columns and vice versa
@@ -918,6 +927,8 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
 - Date type should be set to date
 - You can create date from a different datatype by clicking on add column, select date, and click PARSE
 - If datatype is set to date, click add column, click date, select any options to explore date features
+
+![POWER BI ASS 3](https://github.com/user-attachments/assets/feb39661-5f23-47c8-9c13-45152543bb32)
 
 10. Building Visuals
 - Go to report view
@@ -1004,6 +1015,8 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
     - click more options to open format window
     - format your visual
 
+![EAST BI FIG](https://github.com/user-attachments/assets/b58c53ad-135a-4833-82f7-1ef5a3ec157a)
+
 17. Maps
 - To enable Map, click file, click options and settings, click options, click security, and Check/tick Maps and Field Maps
 - To visualize map,
@@ -1013,16 +1026,23 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
   - Drag and drop location on the empty map
   - format as desired
 
+![MAPS IN POWER BI](https://github.com/user-attachments/assets/e28c8b3f-bf43-4916-8507-7e6265569d2d)
+
 18. Q & A
 - This is used to visualize summary by asking question to generate measure
 - click on Q&A in visual AI in visualization pane
 - type a question e.g., (total number of attrition yes)
+
+![cards and q a](https://github.com/user-attachments/assets/183bba81-b3f5-4434-a3e8-e85bfec70e38)
 
 19. Others
     - To see (E) summation, ensure data type is in numbers
     - Filters can be applied to streamline visuals
 
   
+MY FIRST BI DASHBOARD
+
+![UPDATED VISUALIZATION](https://github.com/user-attachments/assets/12292730-1cb1-42dc-8329-5c929dfdd6b5)
 
 
 
