@@ -1,5 +1,6 @@
 # **MY DATA ANALYSIS JOURNEY**
 
+This project is a documentation of all insight gotten during the Ladies In Tech Initiative Bootcamp . It marks the beginning of my tech journey and the birthplace of my Profession Data Analysis Skill. It is a compilation of notes, key lessons, and insight from classes held during the bootcamp.
 
 ## **TABLE OF CONTENT**
 
@@ -17,9 +18,11 @@
 
 [POWER BI](#POWER-BI)
 
+[GITHUB](#github)
+
 [LINKEDIN](#linkedin)
 
-[GITHUB](#github)
+
 
 ### **OVERVIEW**
 
@@ -851,27 +854,59 @@ Power BI (Business Intelligence) is a data visualisation and business intelligen
   ![THE POWER BI INTERFACE](https://github.com/user-attachments/assets/2358efbb-c32c-423d-a147-e42ac7b5dce9)
 
 KEY TAKE AWAYS FROM POWER BI TUTORIALS
-  - Report view is where you see your visualization
-  - Data view is where you see your data the way it is
-  - Model view is where you see the relationship that exist between data
-  - Uploaded data are seen in Data dialog box at the left
-  - Click on get data to load data
-  - To see your visualization pane on both sides, click on File, click on Options and settings, Select Options, go to Preview features, Check (tick) On Object Interaction
-  - Transfor data checks the integrity of data by checking if all functionality are in order. It is the mechanic that repairs, amends, and manipulates the data
-  - Refresh data updates data from online data sources
-  - DAX Function (Data Analysis Xpression) is used with modelling
-  - Template can be changed from view
-  - Data can be recalled using Transform data
-  - To manually insert data, click enter data and type in the data
-  - Close and apply commit changes made to data in transform data
-  - To load data from an external source, click Get Data
-  - To edit query, right click on the data and click Edit Query
-  - Remove columns removes selected columns
-  - Remove other columns retains selected columns
-  - Applied steps records the steps executed in data cleaning process
-  - clicking on the [x] sign beside each steps undo it and returns data to its previous state
-  - We can also keep rows or remove rows by clicking on either of them
-  - In checking data integrity, we check data 
+
+1. Views and Layouts
+- Report view is where you see your visualization
+- Data view is where you see your data the way it is
+- Model view is where you see the relationship that exists between data
+- Uploaded data are seen in the Data dialog box at the left
+  
+2. Data Loading and Preparation
+- Click on "Get Data" to load data
+- To load data from an external source, click "Get Data"
+- To manually insert data, click "Enter Data" and type in the data
+- Refresh data updates data from online data sources
+  
+3. Data Transformation and Editing
+- Transform data checks the integrity of data by checking if all functionality is in order
+- Data can be recalled using Transform data
+- Close and Apply commits changes made to data in Transform data
+- To edit a query, right-click on the data and click "Edit Query"
+- Applied Steps records the steps executed in the data cleaning process
+- Clicking on the [x] sign beside each step undoes it and returns data to its previous state
+  
+4. Data Cleaning and Structuring
+- Remove columns removes selected columns
+- Remove other columns retains selected columns
+- We can also keep rows or remove rows by clicking on either of them
+- In checking data integrity, we check Column Quality, Column Distribution, and Column Profile
+- In checking data quality, Green shows the percentage of completed columns; Black shows the percentage of empty columns
+- Datasets can be arranged by sorting
+- We can use a column to sort another column from Table tools in Table view
+- Split column functionality: e.g., Split email by delimiter (@) into name and suffix
+- To duplicate column, Right click on column and select option 
+
+5. Data Types and Formatting
+- Data type is of different types and can be seen in the right edge of a column (e.g., ABC for text, 123 for numbers)
+- The right data type is important in column functionality
+- Click on data type to select from the options
+- You can edit or format a column by right-clicking on it
+- Columns can be moved by dragging
+
+6. Advanced Data Transformation
+- Transposing data means changing rows to columns and vice versa
+- Append Data joins tables by adding more data to the rows (similar to union in Excel)
+- Merging data joins tables by adding more columns to the columns (similar to join in Excel)
+
+7. Settings and Customization
+- To see your visualization pane on both sides, click on File, click on Options and Settings, select Options, go to Preview features, check (tick) On Object Interaction
+- Template can be changed from view
+
+8. 
+
+8. Modeling and DAX Functions
+- DAX Function (Data Analysis Expression) is used with modeling
+- 
 
 
 
