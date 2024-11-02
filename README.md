@@ -902,11 +902,43 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
 - To see your visualization pane on both sides, click on File, click on Options and Settings, select Options, go to Preview features, check (tick) On Object Interaction
 - Template can be changed from view
 
-8. 
+8. Working with Dates
+- Date type should be set to date
+- You can create date from a different datatype by clicking on add column, select date, and click PARSE
+- If datatype is set to date, click add column, click date, select any options to explore date features
 
-8. Modeling and DAX Functions
+9. Building Visuals
+- Go to report view
+- the [+] sign at the bottom where we have page is used to add pages to visuals
+- Images can be inserted from INSERT
+- We can add Text from Textbox
+- Expand the data you want to work with
+- To add charts, click on the chart type from visualization pane. An empty chart will appear
+- click add data to select the data you want to add
+
+9. Modeling and DAX Functions
 - DAX Function (Data Analysis Expression) is used with modeling
-- 
+- DAX Function is a way to create data from existing tables through calculations or functions
+- We can add Columns to our tables from add column
+- Column can be conditional, custom, or Calculated
+- To create conditional columns, the If function is used. This is easily pre-programmed in the application
+- To create calculated columns, = with formula is used
+- To create custome columns, formula is also used
+- Examples of columns created with DAX functions using custom columns
+  a. Editing text
+  - Go to transform data
+  - Click add column
+  - select custom column
+  - Name it
+  - Insert function (e.g., Proper, Upper, Lower, etc)
+  - Open bracket
+  - click column whose data is to be used
+  - close bracket
+  - click data should be extracted
+  - insert
+  - click ok
+  b. Joining text
+  - 
 
 
 
