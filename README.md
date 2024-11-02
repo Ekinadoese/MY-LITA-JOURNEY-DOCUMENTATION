@@ -897,17 +897,29 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
 - Transposing data means changing rows to columns and vice versa
 - Append Data joins tables by adding more data to the rows (similar to union in Excel)
 - Merging data joins tables by adding more columns to the columns (similar to join in Excel)
+  
+7. Working with columnar data
+  - Load data
+  - delete last two steps
+  - delete promoted header
+  - transpose
+  - use first role as header
+  - rename column 1 as city
+  - rename column 2 as product
+  - fill city from transform, fill
+  - unpivot column having year, click transform, under any column, click unpivot column
+  - rename attribute to year
 
-7. Settings and Customization
+8. Settings and Customization
 - To see your visualization pane on both sides, click on File, click on Options and Settings, select Options, go to Preview features, check (tick) On Object Interaction
 - Template can be changed from view
 
-8. Working with Dates
+9. Working with Dates
 - Date type should be set to date
 - You can create date from a different datatype by clicking on add column, select date, and click PARSE
 - If datatype is set to date, click add column, click date, select any options to explore date features
 
-9. Building Visuals
+10. Building Visuals
 - Go to report view
 - the [+] sign at the bottom where we have page is used to add pages to visuals
 - Images can be inserted from INSERT
@@ -915,8 +927,9 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
 - Expand the data you want to work with
 - To add charts, click on the chart type from visualization pane. An empty chart will appear
 - click add data to select the data you want to add
+- You can change summarization from the right arrow at the end of your data name inside add data on your visualization
 
-9. Modeling and DAX Functions
+11. Modeling and DAX Functions
 - DAX Function (Data Analysis Expression) is used with modeling
 - DAX Function is a way to create data from existing tables through calculations or functions
 - We can add Columns to our tables from add column
@@ -928,17 +941,88 @@ KEY TAKE AWAYS FROM POWER BI TUTORIALS
   a. Editing text
   - Go to transform data
   - Click add column
-  - select custom column
+  - Select custom column
   - Name it
   - Insert function (e.g., Proper, Upper, Lower, etc)
   - Open bracket
-  - click column whose data is to be used
-  - close bracket
-  - click data should be extracted
-  - insert
-  - click ok
+  - Click column whose data is to be used
+  - Close bracket
+  - Click data should be extracted
+  - Insert
+  - Click ok
   b. Joining text
-  - 
+  - From data view, click new column under home
+  - Enter name of column = concatenate (text 1, text 2)
+  - Close bracket and press enter
+  c. Joining with ambersand
+  - From data view, click new column under home
+  - Enter name of column = firstname & " " & middle name & " " lastname
+  - Press enter
+
+12. Data Summary (Table and Matrix)
+  - From visualization pane, click table or Matrix
+  - Click on the data to expand it
+  - Click and drag column to summarize into the table or Matrix
+  - Do same with other columns to be summarized on the table or matrix
+  - click ... on the right top of the table to sort and format
+    
+13.  Conditional Columns
+  - Take your data to transform state
+  - Click add column
+  - Click conditional column
+  - e.g., If Region equals SouthWest then 1
+  - Use add clause to add additional clause
+  - Type last condition in else
+  - Change datatype
+  - Close and apply
+
+14. Formatting with Right Click
+  - To merge, click the first column you want to merge, hold ctrl, click the next column you want to merge, right click and select merge
+  - To change case, right click on the Column whose case you want to change, click transform, select change to (UPPER, LOWER, PROPER, etc)
+
+15. Calculated Columns
+  - It is used to create columns that were not originally in your table by using quantities available on the table using formular
+  - e.g., = SUM (column 1, column 2)
+
+16. Measures
+  - It is used to call out values in your report dashboard that is not sitted on your table. It is a stand alone
+  - To create a measure from a table
+    - click table view
+    - go to the table under data
+    - click the ...
+    - click new measure
+    - name it in the formular bar
+    - = insert function e.g., Average(LitaClassDAta(year of Birth))
+    - Close bracket and press enter
+  - To visualize your measure
+    - Go to visualization pane
+    - click on card (used for summarized data)
+    - click add field
+    - Insert data
+    - Click on format visual
+    - check or uncheck category label
+    - click more options to open format window
+    - format your visual
+
+17. Maps
+- To enable Map, click file, click options and settings, click options, click security, and Check/tick Maps and Field Maps
+- To visualize map,
+  - click on map in the visualization pane
+  - using map, check location
+  - ensure you are connected to the internet
+  - Drag and drop location on the empty map
+  - format as desired
+
+18. Q & A
+- This is used to visualize summary by asking question to generate measure
+- click on Q&A in visual AI in visualization pane
+- type a question e.g., (total number of attrition yes)
+
+19. Others
+    - To see (E) summation, ensure data type is in numbers
+    - Filters can be applied to streamline visuals
+
+  
 
 
 
